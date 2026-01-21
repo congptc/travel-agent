@@ -26,7 +26,7 @@ class GeminiAI(AgentAI):
             model="gemini-3-flash-preview",
             contents= PROMPT_TEMPLATE,
         )
-        #print(f"Kết quả của Gemini: {response.text}")
+        print(f"Kết quả của Gemini: {response.text}")
         return response.text
     
 AgentFactory._registry["gemini"] = GeminiAI
