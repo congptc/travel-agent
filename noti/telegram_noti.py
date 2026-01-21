@@ -12,6 +12,7 @@ class TelegramNoti(NotiChanel):
     Lớp gửi thông báo qua Telegram
     """
     def send(self, summary):
+        print(f"TELEGRAM_TOKEN: {TELEGRAM_TOKEN} \n TELEGRAM_CHAT_ID: {TELEGRAM_CHAT_ID}")
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
         payload = {"chat_id": TELEGRAM_CHAT_ID, "text": summary, "parse_mode": "Markdown"}
         try:

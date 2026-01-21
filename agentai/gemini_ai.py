@@ -13,6 +13,7 @@ class GeminiAI(AgentAI):
     """
     def ai_summarize(self,places):
         client = genai.Client(api_key=GEMINI_API_KEY)
+        print(f"Key API GENMINI: {GEMINI_API_KEY}")
         
         # Điền dữ liệu vào Prompt Template
         #prompt = PROMPT_TEMPLATE.format(places_data=places)
