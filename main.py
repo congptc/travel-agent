@@ -9,6 +9,8 @@ from noti.noti_factory import NotiFactory
 if __name__ == "__main__":
     
     #places_provider = PlacesProviderFactory.create("mock")
+    #agent_ai = AgentFactory.create("mock")
+    #noti = NotiFactory.create("mock")
     agent_ai = AgentFactory.create("gemini")
     noti = NotiFactory.create("telegram")
     summary = agent_ai.ai_summarize("")

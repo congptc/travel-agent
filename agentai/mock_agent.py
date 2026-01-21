@@ -3,7 +3,7 @@ from config.config import CONFIG, PROMPT_TEMPLATE
 from agentai.base import AgentAI
 from agentai.agent_factory import AgentFactory
 
-GEMINI_API_KEY = "AIzaSyANHcwmXi-_2jXww5lDiAfB2i_NJqsNHPE"
+GEMINI_API_KEY = "AIzaSyB_6đasadsadsad"
 
 class MockAgent(AgentAI):
     
