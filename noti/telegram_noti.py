@@ -19,6 +19,8 @@ class TelegramNoti(NotiChanel):
     def send(self, summary):
         url = f"https://api.telegram.org/bot{self.telegram_token}/sendMessage"
         payload = {"chat_id": self.telegram_chat_id, "text": summary, "parse_mode": "Markdown"}
+        print(f"Địa chỉ telegram: {url}")
+        print(f"Telegram có chạy đến đây ko: {summary}")
         try:
             requests.post(url, json=payload)
         except Exception as e:
