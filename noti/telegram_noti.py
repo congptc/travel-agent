@@ -24,7 +24,8 @@ class TelegramNoti(NotiChanel):
         try:
             response= requests.post(url, json=payload)
             print("STATUS CODE:", response.status_code)
-            print("RESPONSE OK?:", response.ok)
+            if response.status_code != 200:
+                print(f"Lỗi Telegram: {response.text}")
         
         except Exception as e:
             print(f"Lỗi gửi Telegram: {e}")
