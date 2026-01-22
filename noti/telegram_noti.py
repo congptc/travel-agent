@@ -22,7 +22,11 @@ class TelegramNoti(NotiChanel):
         print(f"Địa chỉ telegram: {url}")
         print(f"Telegram có chạy đến đây ko: {summary}")
         try:
-            requests.post(url, json=payload)
+            response= requests.post(url, json=payload)
+            print("STATUS CODE:", response.status_code)
+            print("RESPONSE OK?:", response.ok)
+            print("HEADERS:", response.headers)
+            print("RAW TEXT:", response. Text)
         except Exception as e:
             print(f"Lỗi gửi Telegram: {e}")
     
