@@ -14,4 +14,4 @@ if __name__ == "__main__":
     agent_ai = AgentFactory.create("gemini")
     noti = NotiFactory.create("telegram")
     summary = agent_ai.ai_summarize("")
-    noti.send(f"📅 **KẾ HOẠCH CUỐI TUẦN CHO BẠN**\n{summary}")
+    noti.send(f"KẾ HOẠCH CUỐI TUẦN CHO BẠN\n{summary}")
