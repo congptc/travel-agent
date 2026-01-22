@@ -13,5 +13,6 @@ if __name__ == "__main__":
     #noti = NotiFactory.create("mock")
     agent_ai = AgentFactory.create("gemini")
     noti = NotiFactory.create("telegram")
-    summary = agent_ai.ai_summarize("")
-    noti.send(f"KẾ HOẠCH CUỐI TUẦN CHO BẠN\n{summary}")
+    #summary = agent_ai.ai_summarize("")
+    #noti.send(f"KẾ HOẠCH CUỐI TUẦN CHO BẠN\n{summary}")
+    noti.send("*** Làng gốm Bát Tràng Địa chỉ chính xác: Bát Tràng, Gia Lâm, Hà Nội***")
