@@ -18,15 +18,14 @@ class TelegramNoti(NotiChanel):
 
     def send(self, summary):
         url = f"https://api.telegram.org/bot{self.telegram_token}/sendMessage"
-        payload = {"chat_id": self.telegram_chat_id, "text": summary, "parse_mode": "Markdown"}
+        payload = {"chat_id": self.telegram_chat_id, "text": "test thử", "parse_mode": "Markdown"}
         print(f"Địa chỉ telegram: {url}")
         print(f"Telegram có chạy đến đây ko: {summary}")
         try:
             response= requests.post(url, json=payload)
             print("STATUS CODE:", response.status_code)
             print("RESPONSE OK?:", response.ok)
-            print("HEADERS:", response.headers)
-            print("RAW TEXT:", response. Text)
+        
         except Exception as e:
             print(f"Lỗi gửi Telegram: {e}")
     
