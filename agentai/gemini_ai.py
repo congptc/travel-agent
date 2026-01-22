@@ -23,7 +23,7 @@ class GeminiAI(AgentAI):
         #prompt = PROMPT_TEMPLATE.format(places_data=places)
         #print("Prompt for Gemini AI:", prompt)
         response = client.models.generate_content(
-            model="gemini-3-flash-preview",
+            model="gemini-1.5-flash",
             contents= PROMPT_TEMPLATE,
         )
         print(f"Kết quả của Gemini: {response.text}")
