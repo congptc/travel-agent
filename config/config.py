@@ -15,4 +15,5 @@ KHÔNG gợi ý lại các địa điểm sau: [Liệt kê tên các địa đi�
 Trả về 5 kết quả đa dạng về loại hình (ví dụ: 1 khu di tích, 1 khu cắm trại, 1 bảo tàng, 1 khu vui chơi hiện đại...).
 Thông tin bao gồm: Tên, Địa chỉ chính xác, Rating, và Tóm tắt nét độc đáo riêng biệt.
 Toàn bộ thông tin bạn tóm tắt không vượt quá 200 từ
+không sử dụng markdown, xuống dòng thì dùng ký tự "\n"
 """
