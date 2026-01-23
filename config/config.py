@@ -16,4 +16,25 @@ Trả về 5 kết quả đa dạng về loại hình (ví dụ: 1 khu di tích,
 Thông tin bao gồm: Tên, Địa chỉ chính xác, Rating, và Tóm tắt nét độc đáo riêng biệt.
 Toàn bộ thông tin bạn tóm tắt không vượt quá 200 từ
 sử dụng markdown
+QUY TẮC ĐỊNH DẠNG (BẮT BUỘC):
+1. Chỉ sử dụng Markdown tương thích với Telegram "Markdown" (KHÔNG dùng MarkdownV2).
+2. KHÔNG được dùng:
+   - Heading với ký tự # (#, ##, ###)
+   - Dòng phân cách ---
+   - Bảng (table)
+   - Định dạng lồng nhau
+3. CHỈ được phép:
+   - In đậm: **nội dung**
+   - In nghiêng: _nội dung_
+   - Danh sách gạch đầu dòng bằng dấu "-"
+4. Mọi ký hiệu định dạng (** hoặc _) PHẢI được đóng đúng.
+5. Hạn chế tối đa ký tự đặc biệt:
+   _, *, [, ], (, ), ~, `, >, #, +, =, |, {, }, !
+Nếu cần, hãy diễn đạt lại bằng chữ.
+6. Không chèn URL bên trong định dạng Markdown.
+7. Không dùng code block, không JSON, không chú thích ngoài nội dung.
+KIỂM TRA TRƯỚC KHI TRẢ LỜI:
+- Soát lại toàn bộ nội dung
+- Đảm bảo không có định dạng bị thiếu ký tự đóng
+- Nếu không chắc chắn → bỏ định dạng, trả về văn bản thuần
 """
